@@ -22,7 +22,7 @@ const LatestOrdersList = () => {
 
   if (orders.length === 0) {
     return (
-      <p className="mt-4">
+      <p className="mt-4 p-2">
         Hiç siparişin yok.{" "}
         <span
           className="text-blue-500 hover:cursor-pointer hover:underline"
@@ -35,7 +35,7 @@ const LatestOrdersList = () => {
   }
 
   return (
-    <div className="mt-6 flex flex-col items-center">
+    <div className="mt-6 flex flex-col items-center p-2">
       <ul className="mb-5 space-y-5 divide-y-2 divide-stone-200 border-b-2 border-stone-200">
         {orders.map((order) => (
           <li
