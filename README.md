@@ -20,7 +20,7 @@
 
 ## 🔗 Canlı Demo
 
-👉 [https://fast-react-pizza.vercel.app](https://fast-react-pizza.vercel.app)
+👉 [https://fast-react-pizza-kohl.vercel.app/](https://fast-react-pizza-kohl.vercel.app/)
 
 <br/>
 
