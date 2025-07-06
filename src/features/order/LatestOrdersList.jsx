@@ -39,12 +39,14 @@ const LatestOrdersList = () => {
       <ul className="mb-5 space-y-5 divide-y-2 divide-stone-200 border-b-2 border-stone-200">
         {orders.map((order) => (
           <li
-            className="text-2xl duration-200 hover:text-blue-400"
+            className="text-lg duration-200 hover:text-blue-400 sm:text-2xl"
             key={order.orderId}
           >
             <Link to={`/order/${order.orderId}`}>
-              Sipariş ID: {order.orderId} | Tarih:{" "}
-              {new Date(order.addedAt).toLocaleString()}
+              Sipariş ID: {order.orderId} |
+              <span className="block sm:inline">
+                Tarih: {new Date(order.addedAt).toLocaleString()}
+              </span>
             </Link>
           </li>
         ))}
